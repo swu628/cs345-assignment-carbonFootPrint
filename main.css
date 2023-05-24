@@ -1,0 +1,28 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+/* Full height image header */
+.custom-background-image {
+  background-position: center;
+  background-size: cover;
+  background-image: url("background.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.custom-icon-colour {
+    color:#fcbb00;
+}
+
+.custom-button-background-colour {
+    background-color: #fcbb00;
+    border: #fcbb00;
+}
