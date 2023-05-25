@@ -5,7 +5,6 @@ body, html {
   line-height: 1.8;
 }
 
-
 /* Full height image header */
 .custom-background-image {
   background-position: center;
@@ -15,13 +14,8 @@ body, html {
   filter: grayscale(70%);
 }
 
-
 .w3-bar .w3-button {
   padding: 16px;
-}
-
-.custom-icon-colour {
-  color:#fcbb00;
 }
 
 .custom-heading-text {
@@ -36,6 +30,44 @@ body, html {
   white-space: nowrap;
 }
 
-.custom-navigation-background-colour {
-  background-color: #fcbb00;
+.w3-display-bottomleft .fa:hover {
+  color: #FCBB00;
+}
+
+.custom-contact-icon {
+  padding:24px 48px;
+}
+
+.custom-form-icon-colour {
+  color:#fcbb00;
+}
+
+.custom-exit-icon-colour {
+  color:#E13333;
+  opacity: 0.85;
+}
+
+.custom-input-size {
+  font-size:small;
+  border-radius: 10px;
+}
+
+.custom-input-size:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #fcbb00;
+}
+
+.custom-section-display {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+.custom-form-button {
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
 }

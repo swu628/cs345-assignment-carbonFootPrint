@@ -8,28 +8,26 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="main.css">
-
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fa fa-globe"></i> My Carbon Footprint</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
-      <a href="#faq" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
-      <a href="#setting" class="w3-bar-item w3-button"><i class="fa fa-cog"></i> SETTING</a>
-      <a href="#language" class="w3-bar-item w3-button"><i class="fa fa-language"></i> LANGUAGE</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fa fa-globe"></i> My Carbon Footprint</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT</a>
+            <a href="#faq" class="w3-bar-item w3-button"><i class="fa fa-question"></i> FAQ</a>
+            <a href="#setting" class="w3-bar-item w3-button"><i class="fa fa-cog"></i> SETTING</a>
+            <a href="#language" class="w3-bar-item w3-button"><i class="fa fa-language"></i> LANGUAGE</a>
+            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
 </div>
 
 <!-- Header with full-height image -->
@@ -37,97 +35,85 @@
 <div class="w3-display-middle">
     <span class="w3-jumbo w3-hide-small custom-heading-text">Want to find out your ecological impact?</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium custom-heading-text">Want to find out your ecological impact?</span><br>
-    <div class="w3-center"><button class="w3-button w3-padding-large w3-large w3-margin-top w3-hover-opacity-off custom-register-button w3-center" onclick="document.getElementById('trigger-modal').style.display='block'">Click here to register</button></div>
+    <div class="w3-center"><button class="w3-button w3-padding-large w3-large w3-margin-top custom-register-button w3-hover-white" onclick="document.getElementById('trigger-modal').style.display='block'">Click here to register</button></div>
 </div> 
-<div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+<div class="w3-display-bottomleft w3-text-white w3-large custom-contact-icon">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
 </div>
 
 <!-- Form that pops up when the register button is clicked -->
 <div id="trigger-modal" class="w3-modal" style="z-index:4">
     <div class="w3-modal-content w3-animate-zoom">
-        <div class="w3-container w3-padding w3-light-grey">
-            <span onclick="document.getElementById('trigger-modal').style.display='none'" class="w3-button custom-icon-colour w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+        <div class="w3-container w3-light-grey">
+            <span onclick="document.getElementById('trigger-modal').style.display='none'" class="w3-button custom-exit-icon-colour w3-right w3-xxlarge w3-hover-light-grey"><i class="fa fa-remove"></i></span>
             <h3 class="w3-center">REGISTRATION FORM</h3>
             <p class="w3-center w3-large">Please fill out the information below to register as a new customer</p>
         </div>
-        
         <div class="w3-panel">
             <form action="/action_page.php" target="_blank">
-                <div id="userInfo">
-                    <div class="w3-row w3-section" id="firstName">
-                        <div class="w3-col" style="width:50px">
-                            <i class="w3-xxlarge fa fa-user custom-icon-colour"></i>
-                        </div>
-                        <div class="w3-rest">
-                            <p>USER INFO</p>
-                        </div>
+
+                <div class="w3-container" id="userInfo">
+                    <div class="custom-section-display">
+                        <i class="w3-xlarge fa fa-user custom-form-icon-colour"></i>
+                        <p> USER INFO</p>
                     </div>
-                    <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="First Name"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Surname" required name="Surname"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Username" required name="Username"></p>
-                    <p><input class="w3-input w3-border" type="password" placeholder="Password" required name="Password"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="firstName" type="text" placeholder="First Name" required name="First Name"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="surname" type="text" placeholder="Surname" required name="Surname"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="username" type="text" placeholder="Username" required name="Username"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="password" type="password" placeholder="Password" required name="Password"></p>
                 </div>
 
-                <div id="addressInfo">
-                    <div class="w3-row w3-section" id="homeAddress">
-                        <div class="w3-col" style="width:50px">
-                            <i class="w3-xxlarge fa fa-map-marker custom-icon-colour"></i>
-                        </div>
-                        <div class="w3-rest">
-                            <p>ADDRESS INFO</p>
-                        </div>
+                <div class="w3-container" id="addressInfo">
+                    <div class="custom-section-display">
+                        <i class="w3-xlarge fa fa-map-marker custom-form-icon-colour"></i>
+                        <p>ADDRESS INFO</p>
                     </div>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Home Address" required name="Home Address"></p>
-                    <p><input class="w3-input w3-border" type="text" placeholder="Work Address" required name="Work Address"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="homeAddress" type="text" placeholder="Home Address" required name="Home Address"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="workAddress" type="text" placeholder="Work Address" required name="Work Address"></p>
                 </div>
 
-                <div id="contactInfo">
-                    <div class="w3-row w3-section" id="mobileNumber">
-                        <div class="w3-col" style="width:50px">
-                            <i class="w3-xxlarge fa fa-phone custom-icon-colour"></i>
-                        </div>
-                        <div class="w3-rest">
-                            <p>CONTACT INFO</p>
-                        </div>
+                <div class="w3-container" id="contactInfo">
+                    <div class="custom-section-display">
+                        <i class="w3-xlarge fa fa-phone custom-form-icon-colour"></i>
+                        <p>CONTACT INFO</p>
                     </div>
-                    <p><input class="w3-input w3-border" type="tel" placeholder="Mobile Number" required name="Mobile Number"></p>
-                    <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="mobileNumber" type="tel" placeholder="Mobile Number" required name="Mobile Number"></p>
+                    <p><input class="w3-input w3-border custom-input-size" id="email" type="email" placeholder="Email" required name="Email"></p>
                 </div>
 
-                <div class="w3-section">
-                    <button class="w3-button w3-black" onclick="document.getElementById('trigger-modal').style.display='none'"><i class="fa fa-remove"></i> CANCEL</button>
-                    <button class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> REGISTER NOW</button>
+                <div class="w3-section w3-center">
+                    <button class="w3-button w3-black w3-hover-red custom-form-button" onclick="document.getElementById('trigger-modal').style.display='none'"><i class="fa fa-remove"></i> CANCEL</button>
+                    <button class="w3-button w3-black w3-hover-light-green custom-form-button" type="submit"><i class="fa fa-paper-plane"></i> REGISTER NOW</button>
                 </div> 
             </form>
         </div>    
     </div>
 </div>
  
+
 <script>
 // Modal Image Gallery
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
 }
-
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
 }
 
 // Close the sidebar with the close button
