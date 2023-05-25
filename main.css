@@ -12,17 +12,30 @@ body, html {
   background-size: cover;
   background-image: url("background.jpg");
   min-height: 100%;
+  filter: grayscale(70%);
 }
+
 
 .w3-bar .w3-button {
   padding: 16px;
 }
 
 .custom-icon-colour {
-    color:#fcbb00;
+  color:#fcbb00;
 }
 
-.custom-button-background-colour {
-    background-color: #fcbb00;
-    border: #fcbb00;
+.custom-heading-text {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  white-space: nowrap;
+}
+
+.custom-register-button {
+  background-color: #fcbb00;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+
+.custom-navigation-background-colour {
+  background-color: #fcbb00;
 }
