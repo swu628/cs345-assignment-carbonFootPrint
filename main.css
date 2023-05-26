@@ -9,6 +9,7 @@ body, html {
 .custom-background-image {
   background-position: center;
   background-size: cover;
+  /* Image from pixabay by LoneWombatMedia https://pixabay.com/photos/penguin-gentoo-penguin-aquarium-802453 */
   background-image: url("background.jpg");
   min-height: 100%;
   filter: grayscale(70%);
@@ -50,6 +51,7 @@ body, html {
 .custom-input-size {
   font-size:small;
   border-radius: 10px;
+  height: 30px;
 }
 
 .custom-input-size:focus {
@@ -61,8 +63,9 @@ body, html {
   display: flex; 
   justify-content: center; 
   align-items: center;
-  margin-bottom: -20px;
-  margin-top: 10px;
+  margin-bottom: -25px;
+  margin-top: 5px;
+  text-shadow: 0.5px 0.5px 2px #fcbb00;
 }
 
 .custom-form-button {
@@ -70,8 +73,17 @@ body, html {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 20px;
+  font-size: small;
 }
 
 .custom-form {
   z-index:4;
+}
+
+.custom-heading-margin {
+  margin-bottom: -10px;
+}
+
+.custom-form-size {
+  max-width: 700px;
 }

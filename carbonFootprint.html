@@ -48,44 +48,40 @@
 
 <!-- Form that pops up when the register button is clicked -->
 <div id="trigger-modal" class="w3-modal custom-form">
-    <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-modal-content w3-animate-zoom custom-form-size">
         <div class="w3-container w3-light-grey">
-            <span onclick="document.getElementById('trigger-modal').style.display='none'" class="w3-button custom-exit-icon-colour w3-right w3-xxlarge w3-hover-light-grey"><i class="fa fa-remove"></i></span>
-            <h3 class="w3-center">REGISTRATION FORM</h3>
-            <p class="w3-center w3-large">Please fill out the information below to register as a new customer</p>
+            <span onclick="document.getElementById('trigger-modal').style.display='none'" class="w3-button custom-exit-icon-colour w3-right w3-xlarge w3-hover-light-grey"><i class="fa fa-remove"></i></span>
+            <h3 class="w3-center w3-large custom-heading-margin">REGISTRATION FORM</h3>
+            <p class="w3-center w3-small">Please fill out the information below to register as a new customer</p>
         </div>
-        <div class="w3-panel">
+        <div class="w3-panel" id="form-ct">
             <form action="/action_page.php" target="_blank">
-
                 <div class="w3-container" id="userInfo">
                     <div class="custom-section-display">
                         <i class="w3-xlarge fa fa-user custom-form-icon-colour"></i>
                         <p> USER INFO</p>
                     </div>
-                    <p><input class="w3-input w3-border custom-input-size" id="firstName" type="text" placeholder="First Name" required name="First Name"></p>
-                    <p><input class="w3-input w3-border custom-input-size" id="surname" type="text" placeholder="Surname" required name="Surname"></p>
-                    <p><input class="w3-input w3-border custom-input-size" id="username" type="text" placeholder="Username" required name="Username"></p>
-                    <p><input class="w3-input w3-border custom-input-size" id="password" type="password" placeholder="Password" required name="Password"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="text" placeholder="First Name" required name="First Name"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="text" placeholder="Surname" required name="Surname"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="text" placeholder="Username" required name="Username"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="password" placeholder="Password" required name="Password"></p>
                 </div>
-
                 <div class="w3-container" id="addressInfo">
                     <div class="custom-section-display">
                         <i class="w3-xlarge fa fa-map-marker custom-form-icon-colour"></i>
                         <p>ADDRESS INFO</p>
                     </div>
-                    <p><input class="w3-input w3-border custom-input-size" id="homeAddress" type="text" placeholder="Home Address" required name="Home Address"></p>
-                    <p><input class="w3-input w3-border custom-input-size" id="workAddress" type="text" placeholder="Work Address" required name="Work Address"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="text" placeholder="Home Address" required name="Home Address"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="text" placeholder="Work Address" required name="Work Address"></p>
                 </div>
-
                 <div class="w3-container" id="contactInfo">
                     <div class="custom-section-display">
                         <i class="w3-xlarge fa fa-phone custom-form-icon-colour"></i>
                         <p>CONTACT INFO</p>
                     </div>
-                    <p><input class="w3-input w3-border custom-input-size" id="mobileNumber" type="tel" placeholder="Mobile Number" required name="Mobile Number"></p>
-                    <p><input class="w3-input w3-border custom-input-size" id="email" type="email" placeholder="Email" required name="Email"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="tel" placeholder="Mobile Number" required name="Mobile Number"></p>
+                    <p><input class="w3-input w3-border custom-input-size" type="email" placeholder="Email" required name="Email"></p>
                 </div>
-
                 <div class="w3-section w3-center">
                     <button class="w3-button w3-black w3-hover-red custom-form-button" onclick="document.getElementById('trigger-modal').style.display='none'"><i class="fa fa-remove"></i> CANCEL</button>
                     <button class="w3-button w3-black w3-hover-light-green custom-form-button" type="submit"><i class="fa fa-paper-plane"></i> REGISTER NOW</button>
